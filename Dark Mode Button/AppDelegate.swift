@@ -8,6 +8,7 @@
 
 import Cocoa
 
+
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
@@ -29,8 +30,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
          StatusBarItem?.button?.title = "changeMode"
          StatusBarItem?.button?.action = #selector(changeAppereance)
         
-
-
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

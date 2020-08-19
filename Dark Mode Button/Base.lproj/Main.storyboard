@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.2"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -680,40 +680,19 @@
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--Window Controller-->
-        <scene sceneID="R2V-B0-nI4">
-            <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Dark Mode Button" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="320" height="200"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <connections>
-                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
-                        </connections>
-                    </window>
-                    <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
-                    </connections>
-                </windowController>
-                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="75" y="250"/>
-        </scene>
-        <!--View Controller-->
+        <!--Dark Mode Button-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Dark_Mode_Button" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Dark Mode Button" storyboardIdentifier="MainVCid" id="XfG-lQ-9wD" customClass="MainVC" customModule="Dark_Mode_Button" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="180"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="35" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xb0-W0-SS2">
-                                <rect key="frame" x="56" y="19" width="209" height="161"/>
+                            <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="24" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xb0-W0-SS2">
+                                <rect key="frame" x="46" y="25" width="209" height="130"/>
                                 <subviews>
                                     <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pxE-zT-ZVn">
-                                        <rect key="frame" x="22" y="142" width="165" height="19"/>
+                                        <rect key="frame" x="22" y="111" width="165" height="19"/>
                                         <subviews>
                                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MH8-VF-OWN">
                                                 <rect key="frame" x="0.0" y="2" width="16" height="16"/>
@@ -739,10 +718,10 @@
                                         </customSpacing>
                                     </stackView>
                                     <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="6" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dfX-8a-ycW">
-                                        <rect key="frame" x="36" y="67" width="138" height="40"/>
+                                        <rect key="frame" x="42" y="54" width="124" height="33"/>
                                         <subviews>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Q1a-b6-zw3">
-                                                <rect key="frame" x="5" y="27" width="128" height="13"/>
+                                                <rect key="frame" x="-2" y="20" width="128" height="13"/>
                                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Please turn on this setting:" id="9cW-FO-ZFw">
                                                     <font key="font" metaFont="systemThin" size="10"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -750,29 +729,23 @@
                                                 </textFieldCell>
                                             </textField>
                                             <stackView distribution="fill" orientation="horizontal" alignment="centerY" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tr5-AE-UZj">
-                                                <rect key="frame" x="0.0" y="0.0" width="138" height="21"/>
+                                                <rect key="frame" x="5" y="0.0" width="115" height="14"/>
                                                 <subviews>
-                                                    <switch horizontalHuggingPriority="750" verticalHuggingPriority="750" baseWritingDirection="leftToRight" alignment="left" translatesAutoresizingMaskIntoConstraints="NO" id="0By-qK-Nrb">
-                                                        <rect key="frame" x="-2" y="-2" width="42" height="24"/>
+                                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dXt-hH-ISk">
+                                                        <rect key="frame" x="-2" y="-2" width="119" height="18"/>
+                                                        <buttonCell key="cell" type="check" title="Launch at login." bezelStyle="regularSquare" imagePosition="left" inset="2" id="X8f-l4-W9O">
+                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
                                                         <connections>
-                                                            <action selector="toggleAutoLaunch:" target="XfG-lQ-9wD" id="7ZH-TN-JXO"/>
+                                                            <action selector="toggleAutoLaunchaa:" target="XfG-lQ-9wD" id="ADs-uN-efr"/>
                                                         </connections>
-                                                    </switch>
-                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lwJ-jC-tEb">
-                                                        <rect key="frame" x="46" y="3" width="94" height="15"/>
-                                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Launch at login." id="H7T-NS-qQl">
-                                                            <font key="font" metaFont="system" size="12"/>
-                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                        </textFieldCell>
-                                                    </textField>
+                                                    </button>
                                                 </subviews>
                                                 <visibilityPriorities>
                                                     <integer value="1000"/>
-                                                    <integer value="1000"/>
                                                 </visibilityPriorities>
                                                 <customSpacing>
-                                                    <real value="3.4028234663852886e+38"/>
                                                     <real value="3.4028234663852886e+38"/>
                                                 </customSpacing>
                                             </stackView>
@@ -787,12 +760,12 @@
                                         </customSpacing>
                                     </stackView>
                                     <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wxk-vs-jCo">
-                                        <rect key="frame" x="0.0" y="0.0" width="209" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="209" height="30"/>
                                         <subviews>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="f4O-b7-Nui">
-                                                <rect key="frame" x="50" y="18" width="109" height="14"/>
+                                                <rect key="frame" x="53" y="18" width="102" height="12"/>
                                                 <textFieldCell key="cell" lineBreakMode="clipping" title="© Uygur Kıran 2020" id="JxY-LM-7V8">
-                                                    <font key="font" metaFont="message" size="11"/>
+                                                    <font key="font" size="11" name="HelveticaNeue"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
@@ -828,14 +801,18 @@
                                 </customSpacing>
                             </stackView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="xb0-W0-SS2" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="OCE-JG-hdL"/>
+                            <constraint firstItem="xb0-W0-SS2" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="xi5-Ls-QHd"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="autoLaunchSwitch" destination="0By-qK-Nrb" id="2ad-Zz-pkA"/>
+                        <outlet property="autoLaunchCheckbox" destination="dXt-hH-ISk" id="GMg-Zl-Wxm"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="74" y="292"/>
         </scene>
     </scenes>
     <resources>

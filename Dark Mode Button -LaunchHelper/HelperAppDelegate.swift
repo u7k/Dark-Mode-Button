@@ -11,8 +11,6 @@ import Cocoa
 @NSApplicationMain
 class HelperAppDelegate: NSObject, NSApplicationDelegate {
 
-
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         //launch the main app, if it is not already running.
         let runningApps = NSWorkspace.shared.runningApplications
@@ -27,12 +25,10 @@ class HelperAppDelegate: NSObject, NSApplicationDelegate {
                }
                NSWorkspace.shared.launchApplication(path as String)
            }
-        
-        
+    
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
     }
 
 

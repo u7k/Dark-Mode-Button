@@ -10,6 +10,6 @@ The ultimate “saved you a click” app for your Mac. Dark Mode Button switches
 
 ## Download
 
-[![macstorebadge02](https://user-images.githubusercontent.com/11250400/90790945-52b89880-e311-11ea-98f3-d88db8d24084.png)
-](https://url-gelecek)
+[![Get it on macOS](http://jaywcjlove.github.io/sb/download/white-macos.svg)](https://github.com/)
+
 

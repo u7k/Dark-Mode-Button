@@ -9,7 +9,7 @@ The ultimate “saved you a click” app for your Mac. Dark Mode Button switches
 
 ## Download
 
-[![macstorebadge](https://user-images.githubusercontent.com/11250400/90789381-885c8200-e30f-11ea-888b-c0a5c35c3f83.png)](google.com)
+[![macstorebadge](https://user-images.githubusercontent.com/11250400/90789381-885c8200-e30f-11ea-888b-c0a5c35c3f83.png)](https://guides.github.com/features/mastering-markdown/)
 
 ### It's free!
 

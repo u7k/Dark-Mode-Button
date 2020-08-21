@@ -8,7 +8,7 @@ The ultimate “saved you a click” app for your Mac. Dark Mode Button switches
 
 
 
-## Install
+## Installation
 
 * Download the app from https://github.com/uygurkiran/Dark-Mode-Button/releases
 

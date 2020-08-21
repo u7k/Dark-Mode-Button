@@ -8,8 +8,10 @@ The ultimate “saved you a click” app for your Mac. Dark Mode Button switches
 
 
 
-## Download
+## Install
 
-[![Get it on macOS](http://jaywcjlove.github.io/sb/download/white-macos.svg)](https://github.com/)
+* Download the app from https://github.com/uygurkiran/Dark-Mode-Button/releases
+
+* Drag the "Dark Mode Button.app" to your Applications folder.
 
 
